@@ -7,6 +7,9 @@ func Hello() string {
 }
 
 func Average(xs []float64) float64 {
+	if len(xs) == 0 {
+		return 0.0
+	}
 	total := float64(0)
 	for _, x := range xs {
 		total += x
@@ -16,6 +19,9 @@ func Average(xs []float64) float64 {
 
 //Поиск наименьшего числа в массиве
 func Min(xs []float64) float64 {
+	if len(xs) == 0 {
+		return 0.0
+	}
 	min := 99999999.0
 	for _, val := range xs {
 		if val < min {
@@ -27,6 +33,9 @@ func Min(xs []float64) float64 {
 
 //Поиск наибольшего числа в массиве
 func Max(xs []float64) float64 {
+	if len(xs) == 0 {
+		return 0.0
+	}
 	max := 0.0
 	for _, val := range xs {
 		if val > max {

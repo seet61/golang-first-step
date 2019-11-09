@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(testmod.Hi())
+	fmt.Println(testmod.Hi("test"))
 }
